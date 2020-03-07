@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<stdlib.h>
+/*
+Name:Burak ÇAKIROĞLU/170315015/Formal Education
+Name:Enes TÜRKMEN/170315025/Formal Education
+*/
+
+int main()
+{
+    int total=0,sum=0,number=0,number1=0,variable=0,x,y;
+
+    printf("%15c ============================================================================\n\n",32);
+    printf("%30c ======= DEGREE SUMMATION PROGRAM(ITERATIVE) =======\n\n\n",32);
+    printf("%10c => The first number means that it will be collected from 1 to it number.\n",32);
+    printf("%10c => The second number refers to how many times this number will be processed.\n\n",32);
+    printf("%15c ============================================================================\n\n",32);
+    printf("%10c =>Please enter first number:",32);
+    scanf("%d",&number);
+    variable=number;
+    printf("%10c =>Please enter second number:",32);
+    scanf("%d",&number1);
+    if(number<0 || number1<0)
+    {
+         printf("%10c =>You entered the wrong number.",32);
+    }
+    else
+    {
+    for(y=0;y<number1;y++)
+    {
+        for(x=1;x<=number;x++)
+    {
+        sum=sum+x;
+    }
+    printf("\n%10c%d.(Sum of numbers from 1 to %d)=%d",32,y+1,number,sum);
+    number=sum;
+    sum=0;
+    }
+    printf("\n%10c=>Sum(%d,%d)=%d\n\n\n",32,variable,number1,number);
+    }
+    return 0;
+}
