@@ -1,9 +1,5 @@
 #include<stdio.h>
 #include<stdlib.h>
-/*
-Name:Burak ÇAKIROÐLU/170315015/Formal Education
-Name:Enes TÜRKMEN/170315025/Formal Education
-*/
 
 int main()
 {
